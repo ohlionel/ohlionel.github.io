@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- === Header Starts === -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>PruneTune-AAAI2021</title>
+
+  <link href="./assets/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/font.css" rel="stylesheet" type="text/css">
+  <link href="./assets/style.css" rel="stylesheet" type="text/css">
+<!--  <link rel="stylesheet" type="text/css" href="./assets/bootstrap.min.css">-->
+
+  <link rel="stylesheet" type="text/css" href="./assets/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="./assets/animate.css">
+
+  <link rel="stylesheet" type="text/css" href="./assets/select2.min.css">
+
+  <link rel="stylesheet" type="text/css" href="./assets/perfect-scrollbar.css">
+
+  <link rel="stylesheet" type="text/css" href="./assets/util.css">
+  <link rel="stylesheet" type="text/css" href="./assets/main.css">
+</head>
+<!-- === Header Ends === -->
+
+
+<body>
+
+
+<!-- === Home Section Starts === -->
+<div class="section">
+  <!-- === Title Starts === -->
+  <div class="header">
+    <div class="title", style="padding-top: 10pt;">  <!-- Set padding as 10 if title is with two lines. -->
+      Finding Sparse Structures for Domain Specific Neural Machine Translation
+    </div>
+  </div>
+  <!-- === Title Ends === -->
+  <div class="author">
+    <a href="https://github.com/ohlionel">Jianze Liang</a><sup>1,2</sup>,&nbsp;
+    <a href="https://scholar.google.com/citations?user=Nz-WN7YAAAAJ&hl=en">Chengqi Zhao</a><sup>2</sup>,&nbsp;
+    <a href="https://scholar.google.com/citations?user=hOQ6G6EAAAAJ&hl=en">Mingxuan Wang</a><sup>2</sup>,&nbsp;
+    <a href="https://xpqiu.github.io/">Xipeng Qiu</a><sup>1</sup>,&nbsp;
+    <a href="https://lileicc.github.io">Lei Li</a><sup>3</sup>
+  </div>
+  <div class="institution">
+      <sup>1</sup>Fudan University,<br>
+      <sup>2</sup>ByteDance AI Lab
+  </div>
+  <div class="link">
+    <a href="https://arxiv.org/abs/2012.10586">[Paper]</a>&nbsp;
+    <a href="https://github.com/ohlionel/Prune-Tune">[Code]</a>
+  </div>
+</div>
+<!-- === Home Section Ends === -->
+
+
+<!-- === Overview Section Starts === -->
+<div class="section">
+  <div class="title">Overview</div>
+  <div class="body">
+   Prune-Tune is a novel domain adaptation method via gradual pruning. It learns tiny domain-specific sub-networks during fine-tuning on new domains. Prune-Tune alleviates the over-fitting and the degradation problem without model modification. Furthermore, Prune-Tune is able to sequentially learn a single network with multiple disjoint domain-specific sub-networks for multiple domains.
+  </div>
+  <div class="teaser">
+    <img src="files/approach.png" width="90%">
+  </div>
+</div>
+<!-- === Overview Section Ends === -->
+
+
+<!-- === Result Section Starts === -->
+<div class="section">
+  <div class="title">Results</div>
+  <div class="body">
+    We conducted experiments on both single domain adaptation and multiple domain adaptation to show the effectiveness and flexibility of Prune-Tune. Experiments show that the proposed Prune-Tune outperforms fine-tuning and several strong baselines and it is shown to be much more robust compared to fine-tuning due to the complete retainment of the general information. Beyond that, Prune-Tune can be extended to adapting multiple domains by iteratively pruning and tuning.
+  </div>
+    <!-- Adjust the number of rows and columns (EVERY project differs). -->
+<!--    <table width="100%" style="margin: 20pt 0; text-align: center;">-->
+<!--      <tr>-->
+<!--        <td><img src="files/costt_enfr.png" width="80%"></td>-->
+<!--      </tr>-->
+<!--    </table>-->
+
+    <!-- <br/> -->
+    <!-- <br/> -->
+  <div class="subsection">
+    <div class="subtitle"><center><h4>Results of Single Domain Adaptation on En-De</h4></center></div>
+      <div class="teaser">
+        <img src="files/single-en2de.png" width="90%">
+      </div>
+    <!-- </div> -->
+  </div>
+ <!--  <br/>
+  <br/> -->
+  <div class="subsection">
+    <div class="subtitle"><center><h4>Results of Multiple Domain Adaptation on En-De</h4></center></div>
+      <div class="teaser">
+        <img src="files/multi-en2de.png" width="90%">
+      </div>
+    <!-- </div> -->
+  </div>
+
+  <div class="subsection">
+    <div class="subtitle"><center><h4>Results of Multiple Domain Adaptation on Zh-En</h4></center></div>
+      <div class="teaser">
+        <img src="files/multi-zh2en.png" width="90%">
+      </div>
+    <!-- </div> -->
+  </div>
+
+  <!-- </div> -->
+</div>
+
+
+<div class="section">
+    <div class="title">Videos</div>
+    <div style="position: relative; padding-top: 50%; margin: 20pt 0; text-align: center;">
+      <iframe src="https://slideslive.com/38948417/finding-sparse-structure-for-domain-specific-neural-machine-translation?ref=account-folder-75497-folders" frameborder=0
+              style="position: absolute; top: 2.5%; left: 2.5%; width: 95%; height: 100%;"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+    </div>
+<!--  </div>-->
+</div>
+<!-- === Result Section Ends === -->
+
+
+<!-- === Reference Section Starts === -->
+<div class="section">
+  <div class="bibtex">BibTeX</div>
+<pre>
+@inproceedings{jianze2021prunetune,
+  title={Finding Sparse Structures for Domain Specific Neural Machine Translation},
+  author={Jianze Liang, Chengqi Zhao, Mingxuan Wang, Xipeng Qiu, Lei Li},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  year={2021}
+
+</pre>
+</div>
+</body>
+</html>
